@@ -703,6 +703,58 @@ const PJ = [
       rt:'The redesigned experience launched to strong stakeholder feedback. The bilingual component library is now standard for all GV digital work. The off-season state became a reusable template. Custom icons and interactive Figma/FigJam prototypes delivered for smooth dev handoff.'
     }
   },
+  { id:'dirham', e:'🪙', n:'Digital Dirham App', t:'Fintech · Digital Wallet', role:'Sr. UX/Product Specialist', plat:'iOS / Android', dur:'2026',
+    desc:'End-to-end UX/UI for the Central Bank of the UAE’s Digital Dirham wallet app — onboarding with UAE PASS, wallet creation, add funds, withdraw, P2P, request money, pay-to-merchant, gift cards, activity and notifications. Includes Parent, Child, Smart Tourist and Micromerchant wallets, a full Arabic RTL version, and light/dark modes.',
+    tags:['Central Bank of UAE','Fintech','Digital Wallet','UAE PASS','Arabic RTL','Dark Mode','Design System','Figma'],
+    cs:{
+      prob:{q:'How do you make a national digital currency feel safe, simple and familiar for every kind of user?', a:'The Digital Dirham wallet had to serve very different people — residents, parents managing children, tourists and micro-merchants — with the clarity people expect from a bank and the ease of a daily-use app. Money movement flows needed trust at every step, sensitive data like wallet IDs had to be protected on screen, and every screen had to work in English and Arabic.'},
+      decisions:[
+        {t:'Trust-First Money Flows',b:'Designed Add funds, Withdraw, P2P, Request and Pay-to-merchant as short, consistent flows with clear review, success and error states so users always know where their money is.'},
+        {t:'Masked Wallet ID & Privacy',b:'Introduced a masked wallet ID format across 160+ screens and shared components, with hidden-balance controls so sensitive details are protected in public.'},
+        {t:'Role-Based Wallets',b:'Created dedicated experiences for Parent, Child, Smart Tourist and Micromerchant users inside one coherent system, rather than separate apps.'},
+        {t:'Arabic RTL & Dark Mode System',b:'Built RTL templates and shared components for both languages in light and dark mode, with documented rules for mirroring, Arabic type, number direction and the Dirham symbol.'}
+      ],
+      per:[
+        {n:'Parent',r:'Wallet owner managing a child wallet',a:'P',i:['Sets limits and tops up a child wallet','Needs clear visibility of activity','Expects approvals to be quick and safe']},
+        {n:'Smart Tourist',r:'Visitor using Dirham during a stay',a:'T',i:['Needs fast onboarding','Pays merchants and tops up on the go','Wants simple, clear language']}
+      ],
+      solution:'A complete wallet design system and flow library: 19 flow pages covering onboarding, login, wallet management, money movement, merchants, settings and learning content. Shared components such as Wallet Tile, Wallet Card, Pending Actions and Bottom Sheet keep every flow consistent, and the Arabic RTL version ships with guidelines so other designers can adapt new screens correctly.',
+      outcomes:[
+        {ic:'🧭',t:'19 Flow Pages',b:'Onboarding, login, add funds, withdraw, P2P, request, pay-to-merchant, gift card and more.'},
+        {ic:'🌐',t:'Arabic RTL Version',b:'Templates, shared RTL components and onboarding flow in light and dark mode.'},
+        {ic:'🔒',t:'Masked Wallet ID',b:'One privacy pattern applied consistently across 160+ screens.'},
+        {ic:'🧩',t:'Reusable System',b:'Foundations, components and documentation ready for developer handoff.'}
+      ],
+      results:[{n:'160+',l:'Screens updated'},{n:'19',l:'Flow pages'},{n:'2',l:'Languages (EN/AR)'}],
+      rt:'The Digital Dirham design file now acts as a single source of truth: foundations, components, flows, Arabic RTL templates and design documentation, ready for review and developer handoff.'
+    }
+  },
+  { id:'bizportal', e:'🏦', n:'Business Portal — Banking Dashboard', t:'Fintech · B2B Web Dashboard', role:'Sr. UX/Product Specialist', plat:'Web (Desktop)', dur:'2026',
+    desc:'Web banking dashboard for the Central Bank of the UAE’s Digital Dirham programme, used by businesses — a single place to see balances, move money, review transactions and manage the people and permissions behind a company account.',
+    tags:['Central Bank of UAE','Fintech','B2B','Web Dashboard','Data Tables','Permissions','Design System','Figma'],
+    cs:{
+      prob:{q:'How do you give a business a clear, trustworthy view of its money without overwhelming finance teams?', a:'Businesses need to track balances, payments and transactions across several users and roles. Banking dashboards often bury key actions in dense tables and menus. The challenge was to design a portal where finance teams can see what matters at a glance, act quickly, and stay in control of who can do what.'},
+      decisions:[
+        {t:'Overview-First Dashboard',b:'Put balances, recent activity and pending actions at the top of the dashboard so teams see their financial position and what needs attention before anything else.'},
+        {t:'Scannable Transaction Tables',b:'Designed transaction lists with clear status, amount and reference columns, plus filtering and search so finance teams can find and reconcile entries quickly.'},
+        {t:'Roles & Permissions',b:'Structured user management around roles, so approvers, operators and viewers each see only the actions they are allowed to take.'},
+        {t:'Shared System with the Wallet App',b:'Built the portal on the same foundations, components and tokens as the Digital Dirham app, so the brand and interaction patterns stay consistent across products.'}
+      ],
+      per:[
+        {n:'Finance Manager',r:'Oversees company balances and payments',a:'F',i:['Needs a quick view of balances and activity','Reviews and reconciles transactions','Wants clear audit of who did what']},
+        {n:'Business Operator',r:'Initiates day-to-day payments',a:'O',i:['Needs fast, low-error payment flows','Works within defined permissions','Expects clear confirmation and status']}
+      ],
+      solution:'A desktop-first banking dashboard with an overview home, transaction and activity views, payment flows and role-based user management, built on the Digital Dirham design system for consistency and faster delivery.',
+      outcomes:[
+        {ic:'📊',t:'Clear Overview',b:'Balances, activity and pending actions visible at a glance.'},
+        {ic:'🔎',t:'Findable Transactions',b:'Filterable, scannable tables for reconciliation.'},
+        {ic:'🔐',t:'Role-Based Control',b:'Permissions designed into the structure of the portal.'},
+        {ic:'🧩',t:'Shared Design System',b:'Same foundations and components as the Digital Dirham app.'}
+      ],
+      results:[{n:'Web',l:'Desktop-first'},{n:'3',l:'Core user roles'},{n:'1',l:'Shared design system'}],
+      rt:'The Business Portal extends the Digital Dirham product family to business customers, reusing its design system so both products evolve together.'
+    }
+  },
   { id:'marina', e:'⛵', n:'Dubai Harbour Marina', t:'Mobile App', role:'Lead UX Product Designer', plat:'iOS / Android', dur:'2025',
     desc:'Full mobile UX/UI: interactive visitor journey for yacht bookings and marina experiences. New booking flows, Captain Profile redesign, payment consistency, and a branded digital membership card (PDF + iOS wallet pass).',
     tags:['Mobile App','Booking Flow','Membership Card','Premium UI','Yacht'],
@@ -1240,6 +1292,8 @@ Previously she worked at <strong>Wishpoint Tech / Scandid</strong> (TravelX VIP 
   proj_insurance:{text:`<strong>Insurance Policy Management Dashboard</strong> — policy cards, visual claims timelines, proactive renewal flows, and agent analytics for a complex B2B insurance platform. Full case study:`, card:'insurance', fups:['Next project →','Case studies','Contact me']},
   proj_travelxagent:{text:`<strong>TravelX Agent Portal</strong> — visual package builder, voucher management, loyalty dashboard, and revenue analytics for airport service agents. Full case study:`, card:'travelxagent', fups:['Next project →','Case studies','Contact me']},
   proj_ecommerce:{text:`<strong>E-commerce Website & App</strong> — white-label Affiliate Mall for banks across India, UAE, and Saudi Arabia. Cashback displays, multi-currency, Arabic RTL. Full case study:`, card:'ecommerce', fups:['Next project →','Case studies','Contact me']},
+  proj_dirham:{text:`<strong>Digital Dirham App</strong> — the Central Bank of the UAE’s digital currency wallet: UAE PASS onboarding, add funds, withdraw, P2P, pay-to-merchant, Parent/Child/Tourist/Micromerchant wallets, with a full Arabic RTL version and dark mode. Full case study:`, card:'dirham', fups:['Next project →','Case studies','Contact me']},
+  proj_bizportal:{text:`<strong>Business Portal — Banking Dashboard</strong> — a web dashboard for businesses on the Central Bank of the UAE’s Digital Dirham: balances, transactions, payments and role-based user management, built on the same design system as the wallet app. Full case study:`, card:'bizportal', fups:['Next project →','Case studies','Contact me']},
 };
 
 const FALLBACK = {
@@ -1289,6 +1343,8 @@ const LABEL_MAP = {
   'insurance':'proj_insurance','insurance dashboard':'proj_insurance','policy management':'proj_insurance',
   'travelx agent':'proj_travelxagent','agent portal':'proj_travelxagent','airport services':'proj_travelxagent',
   'ecommerce':'proj_ecommerce','e-commerce':'proj_ecommerce','affiliate mall':'proj_ecommerce','scandid':'proj_ecommerce',
+  'digital dirham':'proj_dirham','digital dirham app':'proj_dirham','dirham':'proj_dirham','digital wallet':'proj_dirham','wallet app':'proj_dirham',
+  'business portal':'proj_bizportal','banking dashboard':'proj_bizportal','business banking':'proj_bizportal','business dashboard':'proj_bizportal',
   'wild wadi':'proj_wildwadi','wildwadi':'proj_wildwadi','waterpark':'proj_wildwadi','wild wadi waterpark':'proj_wildwadi',
   'the view':'proj_viewpalm','view at the palm':'proj_viewpalm','palm view':'proj_viewpalm','observation deck':'proj_viewpalm',
   'ithra':'proj_ithra','ithra dubai':'proj_ithra',
@@ -1321,8 +1377,10 @@ const KEYS = [
   ['insurance','policy management','insurance dashboard'],
   ['agent portal','airport services','travelx agent'],
   ['ecommerce','e-commerce','affiliate mall'],
+  ['business portal','banking dashboard','business banking','business dashboard'],
+  ['digital dirham','dirham','wallet app','digital wallet','cbdc'],
 ];
-const KEY_RESP = ['about','who','projects','skills','process','contact','proj_gv','proj_marina','proj_school','proj_deyaar','proj_wfm','proj_gold','proj_manifest','proj_upl','proj_dhe','proj_wildwadi','proj_viewpalm','proj_ithra','proj_travelx','proj_jobportal','proj_candidateapp','proj_recruiterdash','proj_insurance','proj_travelxagent','proj_ecommerce'];
+const KEY_RESP = ['about','who','projects','skills','process','contact','proj_gv','proj_marina','proj_school','proj_deyaar','proj_wfm','proj_gold','proj_manifest','proj_upl','proj_dhe','proj_wildwadi','proj_viewpalm','proj_ithra','proj_travelx','proj_jobportal','proj_candidateapp','proj_recruiterdash','proj_insurance','proj_travelxagent','proj_ecommerce','proj_bizportal','proj_dirham'];
 
 let lastProjIdx = -1;
 
